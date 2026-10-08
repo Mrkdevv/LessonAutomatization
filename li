@@ -1,0 +1,36 @@
+import webbrowser
+
+webbrowser.open("zoommtg://zoom.us/join?confno=2781669409&pwd=THFzczdDZmx1TlczNEZxeWo1dlJHdz09")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import webbrowser
+import time
+import pyautogui
+
+webbrowser.open("https://meet.google.com/six-ipph-sjs")
+time.sleep(8)
+
+pos = pyautogui.locateCenterOnScreen("join.png", confidence=0.8)
+if pos:
+    pyautogui.click(pos)
+else:
+    print("Кнопка не найдена")
+
+
+
+
+        time.sleep(10)
+    t = now.strftime("%H:%M")
